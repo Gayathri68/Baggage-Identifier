@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Baggage Classifier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="split-page-wrapper">
+
+  <div class="maroon-half">
+    <section class="classifier-section">
+      <div class="classifier-card">
+        <h2>Baggage Analysis Tool</h2>
+
+        <div class="input-section">
+          <label for="imageInput">Upload Baggage Image:</label>
+          <input type="file" id="imageInput" accept="image/*">
+          <img id="imagePreview" src="#" alt="Image Preview" style="max-width: 100%; max-height: 200px; margin-top: 10px; display: none;">
+        </div>
+
+        <div class="input-section">
+          <label for="textPrompt">Ask a question or describe the baggage:</label>
+          <textarea id="textPrompt" placeholder="E.g., 'Is this suitable for cabin?', 'Describe this suitcase.'"></textarea>
+        </div>
+
+        <div class="input-section">
+          <label>Baggage Type:</label>
+          <div>
+            <label><input type="radio" name="baggageType" value="cabin" checked> Cabin Baggage</label>
+            <label><input type="radio" name="baggageType" value="checked"> Checked Baggage</label>
+          </div>
+        </div>
+
+        <div class="input-section" id="routeTypeContainer" style="display: none;">
+          <label for="routeType">Route Type (for Checked Baggage):</label>
+          <select id="routeType">
+            <option value="">-- Select Route --</option>
+            <option value="americas_africa">Flights to/from Africa or the Americas</option>
+            <option value="other_routes">Other Routes</option>
+          </select>
+        </div>
+
+        <button id="askButton">Ask</button>
+
+        <div id="output" class="output-section">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="white-half">
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+
+          <span>Baggage Classifier</span>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Baggage Info</a></li>
+            <li><a href="#" class="active">Baggage Classifier</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="container">
+        <h1>Classify Your Baggage Instantly</h1>
+        <p>Upload an image of your baggage and ask our AI any question about it. Get details like type, color, dimensions, and whether it's cabin size compatible.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy;  All rights reserved.</p>
+      </div>
+    </footer>
+
+
+  </div>
+</div> <script src="script.js"></script>
+</body>
+</html>

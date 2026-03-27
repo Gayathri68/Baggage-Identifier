@@ -39,3 +39,7 @@ build/
 
 .env
 target/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
