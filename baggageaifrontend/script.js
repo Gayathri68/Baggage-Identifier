@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 // Send the request to your Java backend
-                const response = await fetch('http://localhost:4567/classify', {
+                const response = await fetch("https://baggageai.onrender.com/classify", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
