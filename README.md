@@ -145,17 +145,14 @@ It generates:
 ---
 
 ## 📂 Project Structure
-├── baggageaifrontend/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
+
+
+baggage-identification-classifier/
 │
-├── src/main/java/
-│ ├── Main.java
-│ ├── ImageUtils.java
-│ └── PromptGenerator.java
-│
-├── pom.xml
+├── baggageaifrontend/      # Frontend (HTML, CSS, JavaScript)
+├── src/main/java/          # Backend (Java + Spark Framework)
+├── pom.xml                 # Maven configuration & dependencies
+├── .gitignore
 └── README.md
 
 
